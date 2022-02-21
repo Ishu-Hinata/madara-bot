@@ -1,9 +1,9 @@
 <h2 align="center">
-    ──「 SIESTA ROBOT IS A MODULAR BOT WITH ANIME THEME 」──
+    ──「 MADARA ROBOT IS A MODULAR BOT WITH ANIME THEME 」──
 </h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/409f1e6c7e44e7023fe26.jpg">
+  <img src="https://telegra.ph/file/2a315b7d9dc8f0255bc4a.jpg">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/3931976db775cf0955241.jpg">
+  <img src="https://telegra.ph/file/7df76ab50b8540d0da9c8.jpg">
 </p>
 
 <h2 align="center">
@@ -34,9 +34,9 @@
 </h2>
 
 <p align="center">
-<a href="https://t.me/saint_foire"> <img src="https://img.shields.io/badge/Vain-User-green?style=for-the-badge&logo=telegram" alt="Vain on Telegram" /> </a>
-<a href="https://t.me/machinaxsupport"> <img src="https://img.shields.io/badge/Support-Chat-green?style=for-the-badge&logo=telegram" alt="Support Chat" /> </a>
-<a href="https://t.me/machinaxupdate"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
+<a href="https://t.me/Lord_DSP_3"> <img src="https://img.shields.io/badge/DSP-User-green?style=for-the-badge&logo=telegram" alt="Vain on Telegram" /> </a>
+<a href="https://t.me/Anime_Gaming_chat_global"> <img src="https://img.shields.io/badge/Support-Chat-green?style=for-the-badge&logo=telegram" alt="Support Chat" /> </a>
+<a href="https://t.me/Anime_Hub_Fz"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
 </p>
 
 <h2 align="center">
