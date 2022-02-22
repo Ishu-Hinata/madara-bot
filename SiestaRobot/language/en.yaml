@@ -492,37 +492,37 @@ greetings_help: |
     ──「 Greetings 」──
 
     *Admins only:*
-    ❂ /welcome <on/off>*:* enable/disable welcome messages.
-    ❂ /welcome*:* shows current welcome settings.
-    ❂ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
-    ❂ /goodbye*:* same usage and args as `/welcome`.
-    ❂ /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
-    ❂ /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
-    ❂ /resetwelcome*:* reset to the default welcome message.
-    ❂ /resetgoodbye*:* reset to the default goodbye message.
-    ❂ /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
-    ❂ /welcomemutehelp*:* gives information about welcome mutes.
-    ❂ /cleanservice <on/off*:* deletes telegrams welcome/left service messages.
+    🥂 /welcome <on/off>*:* enable/disable welcome messages.
+    🥂 /welcome*:* shows current welcome settings.
+    🥂 /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+    🥂 /goodbye*:* same usage and args as `/welcome`.
+    🥂 /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
+    🥂 /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
+    🥂 /resetwelcome*:* reset to the default welcome message.
+    🥂 /resetgoodbye*:* reset to the default goodbye message.
+    🥂 /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
+    🥂 /welcomemutehelp*:* gives information about welcome mutes.
+    🥂 /cleanservice <on/off*:* deletes telegrams welcome/left service messages.
     *Example:*
     user joined chat, user left chat.
     *Welcome markdown:*
-    ❂ /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
+    🥂 /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
 WELCOME_HELP_TEXT: |
     ──「 Greetings Format Help 」──
 
     "Your group's welcome/goodbye messages can be personalised in multiple ways. If you want the messages"
     " to be individually generated, like the default welcome message is, you can use *these* variables:\n"
-    "  ❂ `{first}`*:* this represents the user's *first* name\n"
-    "  ❂ `{last}`*:* this represents the user's *last* name. Defaults to *first name* if user has no "
+    "  🍁 `{first}`*:* this represents the user's *first* name\n"
+    "  🍁 `{last}`*:* this represents the user's *last* name. Defaults to *first name* if user has no "
     "last name.\n"
-    "  ❂ `{fullname}`*:* this represents the user's *full* name. Defaults to *first name* if user has no "
+    "  🍁 `{fullname}`*:* this represents the user's *full* name. Defaults to *first name* if user has no "
     "last name.\n"
-    "  ❂ `{username}`*:* this represents the user's *username*. Defaults to a *mention* of the user's "
+    "  🍁 `{username}`*:* this represents the user's *username*. Defaults to a *mention* of the user's "
     "first name if has no username.\n"
-    "  ❂ `{mention}`*:* this simply *mentions* a user - tagging them with their first name.\n"
-    "  ❂ `{id}`*:* this represents the user's *id*\n"
-    "  ❂ `{count}`*:* this represents the user's *member number*.\n"
-    "  ❂ `{chatname}`*:* this represents the *current chat name*.\n"
+    "  🍁 `{mention}`*:* this simply *mentions* a user - tagging them with their first name.\n"
+    "  🍁 `{id}`*:* this represents the user's *id*\n"
+    "  🍁 `{count}`*:* this represents the user's *member number*.\n"
+    "  🍁 `{chatname}`*:* this represents the *current chat name*.\n"
     "\nEach variable MUST be surrounded by `{}` to be replaced.\n"
     "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
     "Buttons are also supported, so you can make your welcomes look awesome with some nice intro "
@@ -538,41 +538,41 @@ WELCOME_MUTE_HELP_TEXT: |
 
     "You can get the bot to mute new people who join your group and hence prevent spambots from flooding your group. "
     "The following options are possible:\n"
-    "  ❂ `/welcomemute soft`*:* restricts new members from sending media for 24 hours.\n"
-    "  ❂ `/welcomemute strong`*:* mutes new members till they tap on a button thereby verifying they're human.\n"
-    "  ❂ `/welcomemute captcha`*:*  mutes new members till they solve a button captcha thereby verifying they're human.\n"
-    "  ❂ `/welcomemute off`*:* turns off welcomemute.\n"
+    "  🎴 `/welcomemute soft`*:* restricts new members from sending media for 24 hours.\n"
+    "  🎴 `/welcomemute strong`*:* mutes new members till they tap on a button thereby verifying they're human.\n"
+    "  🎴 `/welcomemute captcha`*:*  mutes new members till they solve a button captcha thereby verifying they're human.\n"
+    "  🎴 `/welcomemute off`*:* turns off welcomemute.\n"
     "*Note:* Strong mode kicks a user from the chat if they dont verify in 120seconds. They can always rejoin though"
 info_and_afk_help: |
     ──「 Info and AFK 」──
 
     *ID:*
-    ❂ /id*:* get the current group id. If used by replying to a message, gets that user's id.
-    ❂ /gifid*:* reply to a gif to me to tell you its file ID.
+    🥷🏻 /id*:* get the current group id. If used by replying to a message, gets that user's id.
+    🥷🏻 /gifid*:* reply to a gif to me to tell you its file ID.
     
     *Self addded information:* 
-    ❂ /setme <text>*:* will set your info
-    ❂ /me*:* will get your or another user's info.
+    🥷🏻 /setme <text>*:* will set your info
+    🥷🏻 /me*:* will get your or another user's info.
     Examples:
-    ❂ /setme I am a wolf.
-    ❂ /me @username(defaults to yours if no user specified)
+    🀄 /setme I am a wolf.
+    🎴 /me @username(defaults to yours if no user specified)
     
     *Information others add on you:* 
-    ❂ /bio*:* will get your or another user's bio. This cannot be set by yourself.
-    ❂ /setbio <text>*:* while replying, will save another user's bio 
+    🧧 /bio*:* will get your or another user's bio. This cannot be set by yourself.
+    🧧 /setbio <text>*:* while replying, will save another user's bio 
     Examples:
-    ❂ /bio @username(defaults to yours if not specified).
-    ❂ /setbio This user is a wolf (reply to the user)
+    🧧 /bio @username(defaults to yours if not specified).
+    🧧 /setbio This user is a wolf (reply to the user)
     
     *Overall Information about you:*
-    ❂ /info*:* get information about a user. 
+    🖥️ /info*:* get information about a user. 
     
     *json Detailed info:*
-    ❂ /json*:* Get Detailed info about any message.
+    🎋 /json*:* Get Detailed info about any message.
     
     *AFk:*
     When marked as AFK, any mentions will be replied to with a message stating that you're not available!
-    ❂ /afk <reason>*:* Mark yourself as AFK.
+    🎑 /afk <reason>*:* Mark yourself as AFK.
       - brb <reason>: Same as the afk command, but not a command. 
       
     *What is that health thingy?*
@@ -585,12 +585,12 @@ locks_help: |
     The locks module allows you to lock away some common items in the \
     telegram world; the bot will automatically delete them!
 
-    ❂ /locktypes*:* Lists all possible locktypes
+    🎴 /locktypes*:* Lists all possible locktypes
 
     *Admins only:*
-    ❂ /lock <type>*:* Lock items of a certain type (not available in private)
-    ❂ /unlock <type>*:* Unlock items of a certain type (not available in private)
-    ❂ /locks*:* The current list of locks in this chat.
+    🎴 /lock <type>*:* Lock items of a certain type (not available in private)
+    🎴 /unlock <type>*:* Unlock items of a certain type (not available in private)
+    🎴 /locks*:* The current list of locks in this chat.
 
     Locks can be used to restrict a group's users.
     eg:
@@ -599,14 +599,14 @@ locks_help: |
     Locking bots will stop non-admins from adding bots to the chat.
 
     *Note:*
-    ❂ Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
-    ❂ Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
+    🍁 Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
+    🍁 Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
 logchannel_help: |
     ──「 Log channel 」──
 
-    ❂ /logchannel*:* get log channel info
-    ❂ /setlog*:* set the log channel.
-    ❂ /unsetlog*:* unset the log channel.
+    🍃 /logchannel*:* get log channel info
+    🍃 /setlog*:* set the log channel.
+    🍃 /unsetlog*:* unset the log channel.
 
     *Setting the log channel is done by*:
 
@@ -617,34 +617,34 @@ logomarker_help: |
     ──「 Logo Marker 」──
     
     This is help menu for logomaker
-    ❂ /logo <text/name> - Create a logo with random view.
-    ❂ /wlogo <text/name> - Create a logo with wide view only.
+    〽️ /logo <text/name> - Create a logo with random view.
+    〽️ /wlogo <text/name> - Create a logo with wide view only.
 
     *Image Editor : *
-    ❂  /edit <reply photo> - to edit image.
+    🌆  /edit <reply photo> - to edit image.
 musicplayer_help: |
     ──「 Musicplayer 」──
 
     Help Music can access with different command and support dashboard help and setting.
-    ❂ /mhelp - for help music module
-    ❂ /msettings - for setting music module
+    🎵 /mhelp - for help music module
+    🎵 /msettings - for setting music module
 
     NOTE : DON'T SPAMMING AT REQUEST SONG OR VIDEO...
 notes_help: |
     ──「 Notes 」──
 
-    ❂ /get <notename>*:* get the note with this notename
-    ❂ #<notename>*:* same as /get
-    ❂ /notes or /saved*:* list all saved notes in this chat
-    ❂ /number *:* Will pull the note of that number in the list
+    🀄 /get <notename>*:* get the note with this notename
+    🀄 #<notename>*:* same as /get
+    🀄 /notes or /saved*:* list all saved notes in this chat
+    🀄 /number *:* Will pull the note of that number in the list
     If you would like to retrieve the contents of a note without any formatting, use `/get <notename> noformat`. This can \
     be useful when updating a current note
 
     *Admins only:*
-    ❂ /save <notename> <notedata>*:* saves notedata as a note with name notename
+    🎴 /save <notename> <notedata>*:* saves notedata as a note with name notename
     A button can be added to a note by using standard markdown link syntax - the link should just be prepended with a \
     `buttonurl:` section, as such: `[somelink](buttonurl:example.com)`. Check `/markdownhelp` for more info
-    ❂ /save <notename>*:* save the replied message as a note with name notename
+    🎴 /save <notename>*:* save the replied message as a note with name notename
     Separate diff replies by `%%%` to get random notes
     *Example:*
       ➩ `/save notename
@@ -654,99 +654,100 @@ notes_help: |
          %%%
          Reply 3`
 
-    ❂ /clear <notename>*:* clear note with this name
-    ❂ /removeallnotes*:* removes all notes from the group
+    🀄 /clear <notename>*:* clear note with this name
+    🀄 /removeallnotes*:* removes all notes from the group
 
     *Note:* Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.
 reports_help: |
     ──「 Report 」──
 
-    ❂ /report <reason>*:* reply to a message to report it to admins.
-    ❂ @admin*:* reply to a message to report it to admins.
+    ⛑️ /report <reason>*:* reply to a message to report it to admins.
+    ⛑️ @admin*:* reply to a message to report it to admins.
     *NOTE:* Neither of these will get triggered if used by admins.
 
     *Admins only:*
-    ❂ /reports <on/off>*:* change report setting, or view current status.
-    ❂ If done in pm, toggles your status.
-    ❂ If in group, toggles that groups's status.
+    ⛑️ /reports <on/off>*:* change report setting, or view current status.
+    ⛑️ If done in pm, toggles your status.
+    ⛑️ If in group, toggles that groups's status.
 search_help: |
     ──「 Search 」──
 
-    ❂ /google <query>*:* Perform a google search
-    ❂ /image <query>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
-    ❂ /app <appname>*:* Searches for an app in Play Store and returns its details.
-    ❂ /reverse: Does a reverse image search of the media which it was replied to.
-    ❂ /gps <location>*:* Get gps location.
-    ❂ /github <username>*:* Get information about a GitHub user.
-    ❂ /country <country name>*:* Gathering info about given country
-    ❂ /imdb <Movie name>*:* Get full info about a movie with imdb.com
-    ❂ Siesta <query>*:* Siesta answers the query
+    🖥️ /google <query>*:* Perform a google search
+    🖥️ /image <query>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+    🖥️ /app <appname>*:* Searches for an app in Play Store and returns its details.
+    🖥️ /reverse: Does a reverse image search of the media which it was replied to.
+    🖥️ /gps <location>*:* Get gps location.
+    🖥️ /github <username>*:* Get information about a GitHub user.
+    🖥️ /country <country name>*:* Gathering info about given country
+    🖥️ /imdb <Movie name>*:* Get full info about a movie with imdb.com
+    🖥️ Madara <query>*:* Madara answers the query if is in mood
 
-    💡 Ex : `Siesta where is Japan?`
+    💡 Ex : `Madara where is Japan?`
 stickers_help: |
     ──「 Stickers 」──
 
     *Help menu for stickers tools*
-    ❂ /stickerid*:* reply to a sticker to me to tell you its file ID.
-    ❂ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
-    ❂ /kang*:* reply to a sticker to add it to your pack.
-    ❂ /delsticker*:* Reply to your anime exist sticker to your pack to delete it.
-    ❂ /stickers*:* Find stickers for given term on combot sticker catalogue
-    ❂ /tiny*:* To make small sticker
-    ❂ /kamuii <1-8> *:* To deepefying stiker
-    ❂ /mmf <reply with text>*:* To draw a text for sticker or pohots
+    🩸 /stickerid*:* reply to a sticker to me to tell you its file ID.
+    💧 /getsticker*:* reply to a sticker to me to upload its raw PNG file.
+    🩸 /kang*:* reply to a sticker to add it to your pack.
+    💧 /delsticker*:* Reply to your anime exist sticker to your pack to delete it.
+    🩸 /stickers*:* Find stickers for given term on combot sticker catalogue
+    💧 /tiny*:* To make small sticker
+    🩸 /kamuii <1-8> *:* To deepefying stiker
+    💧 /mmf <reply with text>*:* To draw a text for sticker or pohots
 tools_help: |
     ──「 Tools 」──
 
     *Sangmata Info bot*
-    ❂ /sg <reply>*:* To check history name
+    🎋 /sg <reply>*:* To check history name
 
     *Date-time-Weather*
-    ❂ /time <country code>*:* Gives information about a timezone.
-    ❂ /weather <city>*:* Get weather info in a particular place.
-    ❂ /wttr <city>*:* Advanced weather module, usage same as /weather
-    ❂ /wttr moon*:* Get the current status of moon
+    🎋 /time <country code>*:* Gives information about a timezone.
+    🎋 /weather <city>*:* Get weather info in a particular place.
+    🎋 /wttr <city>*:* Advanced weather module, usage same as /weather
+    🎋 /wttr moon*:* Get the current status of moon
 
     *Converts*
-    ❂ /encrypt*:* Encrypts The Given Text
-    ❂ /decrypt*:* Decrypts Previously Ecrypted Text
-    ❂ /zip*:* reply to a telegram file to compress it in .zip format
-    ❂ /unzip*:* reply to a telegram file to decompress it from the .zip format
+    🎐 /encrypt*:* Encrypts The Given Text
+    🎐 /decrypt*:* Decrypts Previously Ecrypted Text
+    🎐 /zip*:* reply to a telegram file to compress it in .zip format
+    🎐 /unzip*:* reply to a telegram file to decompress it from the .zip format
 
     *Random API*
-    ❂ /ptl: get random video from Instagram timeline
-    ❂ /chika: get random video from chikakiku
-    ❂ /wibu:get random short anime video or photos
-    ❂ /truth: challenge 
-    ❂ /dare: challenge
+    🦋 /ptl: get random video from Instagram timeline
+    🦋
+/chika: get random video from chikakiku
+    🦋 /wibu:get random short anime video or photos
+    🦋 /truth: challenge 
+    🦋 /dare: challenge
     Link To File:
-    ❂ /up: reply to a direct download link to upload it to telegram as files
+    🦋 /up: reply to a direct download link to upload it to telegram as files
     
     File To Link:
-    ❂ /transfersh: reply to a telegram file to upload it on transfersh and get direct download link
-    ❂ /tmpninja: reply to a telegram file to upload it on tmpninja and get direct download link
+    🦋 /transfersh: reply to a telegram file to upload it on transfersh and get direct download link
+    🦋 /tmpninja: reply to a telegram file to upload it on tmpninja and get direct download link
     File Or Text To Telegraph:
-    ❂ /tgm : Get Telegraph Link Of Replied Media
-    ❂ /tgt: Get Telegraph Link of Replied Text
+    🦋 /tgm : Get Telegraph Link Of Replied Media
+    🦋 /tgt: Get Telegraph Link of Replied Text
 
     Tagger
-    ❂ /tagall : for tag everyone at least 100 member first.
+    🦋 /tagall : for tag everyone at least 100 member first.
 translator_help: |
     ──「 Translator 」──
 
     Use this module to translate stuff!
 
     *Commands:*
-    ❂ /tl (or /tr): as a reply to a message, translates it to English.
-    ❂ /tl <lang>: translates to <lang>
+    🔮 /tl (or /tr): as a reply to a message, translates it to English.
+    🔮 /tl <lang>: translates to <lang>
        eg: /tl ja: translates to Japanese.
-    ❂ /tl <source>//<dest>: translates from <source> to <lang>.
+    🔮 /tl <source>//<dest>: translates from <source> to <lang>.
        eg:  /tl ja//en: translates from Japanese to English.
-    ❂ /langs: get a list of supported languages for translation.
+    🔮 /langs: get a list of supported languages for translation.
 
     I can convert text to voice and voice to text..
-    ❂ /tts <lang code>*:* Reply to any message to get text to speech output
-    ❂ /stt*:* Type in reply to a voice message(support english only) to extract text from it.
+    🔮 /tts <lang code>*:* Reply to any message to get text to speech output
+    🔮 /stt*:* Type in reply to a voice message(support english only) to extract text from it.
     
     *Language Codes*
       `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
@@ -758,15 +759,15 @@ translator_help: |
 warns_help: |
     ──「 Warns 」──
 
-    ❂ /warns <userhandle>: get a user's number, and reason, of warns.
-    ❂ /warnlist: list of all current warning filters
-    ❂ /warn <userhandle>: warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-    ❂ /dwarn <userhandle>: warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-    ❂ /resetwarn <userhandle>: reset the warns for a user. Can also be used as a reply.
-    ❂ /addwarn <keyword> <reply message>: set a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user.
-    ❂ /nowarn <keyword>: stop a warning filter
-    ❂ /warnlimit <num>: set the warning limit
-    ❂ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
+    🎴 /warns <userhandle>: get a user's number, and reason, of warns.
+    🎴 /warnlist: list of all current warning filters
+    🎴 /warn <userhandle>: warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
+    🎴 /dwarn <userhandle>: warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.
+    🎴 /resetwarn <userhandle>: reset the warns for a user. Can also be used as a reply.
+    🎴 /addwarn <keyword> <reply message>: set a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user.
+    🎴 /nowarn <keyword>: stop a warning filter
+    🎴 /warnlimit <num>: set the warning limit
+    🎴 /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
 
 # Admin.py Variabel Text
 user_change_info: "You're missing rights to change chat info!"
