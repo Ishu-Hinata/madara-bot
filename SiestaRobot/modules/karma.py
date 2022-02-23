@@ -19,7 +19,7 @@ from SiestaRobot.ex_plugins.dbfunctions import (
 from SiestaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
 from SiestaRobot import arq
 
-regex_upvote = r"^(🀄⚡|🎴🍃|🥷🏻🧧|🔥)$"
+regex_upvote = r"^(🀄|⚡|🎴|🍃|🥷🏻|🧧|🔥)$"
 regex_downvote = r"^(🚫|❌|🩸|💧)$"
 
 
@@ -61,7 +61,7 @@ async def upvote(_, message):
         chat_id, await int_to_alpha(user_id), new_karma
     )
     await message.reply_text(
-        f"Incremented Reputation of {user_mention} By 1 \nTotal Points: {karma}"
+        f"Increased Reputation of {user_mention}🥷🏻⚡ By 1 \nTotal Points: {karma}"
     )
 
 
@@ -98,7 +98,7 @@ async def upvote(_, message):
     new_karma = {"Reputation": karma}
     await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
     await message.reply_text(
-        f"Incremented Reputation of {user_mention} By 1 \nTotal Points: {karma}"
+        f"Increased Reputation of {user_mention}🥷🏻⚡ By 1 \nTotal Points: {karma}"
     )
 
 
@@ -129,29 +129,29 @@ async def downvote(_, message):
     user_mention = message.reply_to_message.from_user.mention
     current_karma = await get_karma(chat_id, await int_to_alpha(user_id))
     if current_karma:
-        current_karma = current_karma["karma"]
+        current_karma = current_karma["Reputation"]
         karma = current_karma - 1
     else:
         karma = 1
-    new_karma = {"karma": karma}
+    new_karma = {"Reputation": karma}
     await update_karma(chat_id, await int_to_alpha(user_id), new_karma)
     await message.reply_text(
-        f"Decremented Karma Of {user_mention} By 1 \nTotal Points: {karma}"
+        f"Decreased Karma Of {user_mention}🥷🏻🩸 By 1 \nTotal Points: {karma}"
     )
 
 
-@app.on_message(filters.command("Repustat") & filters.group)
+@app.on_message(filters.command("repustat") & filters.group)
 @capture_err
 async def karma(_, message):
     chat_id = message.chat.id
     if not message.reply_to_message:
-        m = await message.reply_text("Analyzing Reputation...Will Take 10 Seconds")
+        m = await message.reply_text("Analyzing Reputation of all Shinobi in chat...")
         karma = await get_karmas(chat_id)
         if not karma:
             await m.edit("No Reputation in DB for this chat.")
             return
-        msg = f"**Top Reputation members list of {message.chat.title}:- **\n"
-        limit = 0
+        msg = f"**Top 10 Reputation Shinobi list of {message.chat.title}:- **\n"
+        limit = 10
         karma_dicc = {}
         for i in karma:
             user_id = await alpha_to_int(i)
@@ -181,7 +181,7 @@ async def karma(_, message):
     else:
         user_id = message.reply_to_message.from_user.id
         karma = await get_karma(chat_id, await int_to_alpha(user_id))
-        karma = karma["eeputation"] if karma else 0
+        karma = karma["reputation"] if karma else 0
         await message.reply_text(f"**Total Points**: __{karma}__")
 
 
@@ -196,9 +196,10 @@ async def captcha_state(_, message):
     state = state.lower()
     if state == "on":
         await karma_on(chat_id)
-        await message.reply_text("Enabled Reputation system.")
+        await message.reply_text("Enabled Shinobi 
+                                 Reputation system.")
     elif state == "off":
         karma_off(chat_id)
-        await message.reply_text("Disabled Reputation system.")
+        await message.reply_text("Disabled Shinobi Reputation system.")
     else:
         await message.reply_text(usage)
