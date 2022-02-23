@@ -196,8 +196,7 @@ async def captcha_state(_, message):
     state = state.lower()
     if state == "on":
         await karma_on(chat_id)
-        await message.reply_text("Enabled Shinobi 
-                                 Reputation system.")
+        await message.reply_text("Enabled Shinobi Reputation system.")
     elif state == "off":
         karma_off(chat_id)
         await message.reply_text("Disabled Shinobi Reputation system.")
