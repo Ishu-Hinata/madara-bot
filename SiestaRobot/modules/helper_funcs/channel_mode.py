@@ -20,8 +20,9 @@ class AdminPerms(Enum):
 
 
 class ChatStatus(Enum):
-    CREATOR = "creator"
-    ADMIN = "administrator"
+    CREATOR = "🎴Hokage🎴"
+"
+    ADMIN = "🥷🏻Ambu Black Ops🥷🏻"
 
 
 anon_callbacks = {}
