@@ -21,7 +21,6 @@ class AdminPerms(Enum):
 
 class ChatStatus(Enum):
     CREATOR = "🎴Hokage🎴"
-"
     ADMIN = "🥷🏻Ambu Black Ops🥷🏻"
 
 
