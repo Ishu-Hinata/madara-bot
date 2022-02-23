@@ -19,8 +19,8 @@ from SiestaRobot.ex_plugins.dbfunctions import (
 from SiestaRobot.utils.filter_groups import karma_negative_group, karma_positive_group
 from SiestaRobot import arq
 
-regex_upvote = r"^((?i)\🀄️|🩸|🧧|🔥|🎋|🎴)$"
-regex_downvote = r"^(\-|👎|😑)$"
+regex_upvote = r"^(🀄⚡|🎴🍃|🥷🏻🧧|🔥)$"
+regex_downvote = r"^(🚫|❌|🩸|💧)$"
 
 
 
@@ -181,14 +181,14 @@ async def karma(_, message):
     else:
         user_id = message.reply_to_message.from_user.id
         karma = await get_karma(chat_id, await int_to_alpha(user_id))
-        karma = karma["Reputation"] if karma else 0
+        karma = karma["eeputation"] if karma else 0
         await message.reply_text(f"**Total Points**: __{karma}__")
 
 
-@app.on_message(filters.command("Reputation") & ~filters.private)
+@app.on_message(filters.command("reputation") & ~filters.private)
 @adminsOnly("can_change_info")
 async def captcha_state(_, message):
-    usage = "**Usage:**\n/Reputation [ON|OFF]"
+    usage = "**Usage:**\n/reputation [ON|OFF]"
     if len(message.command) != 2:
         return await message.reply_text(usage)
     chat_id = message.chat.id
