@@ -140,7 +140,7 @@ async def downvote(_, message):
     )
 
 
-@app.on_message(filters.command("repustat") & filters.group)
+@app.on_message(filters.command("toprep") & filters.group)
 @capture_err
 async def karma(_, message):
     chat_id = message.chat.id
@@ -164,7 +164,7 @@ async def karma(_, message):
             await m.edit("No Reputation in DB for this chat.")
             return
         for user_idd, karma_count in karma_arranged.items():
-            if limit > 9:
+            if limit > 10:
                 break
             try:
                 user = await app.get_users(int(user_idd))
@@ -182,7 +182,7 @@ async def karma(_, message):
         user_id = message.reply_to_message.from_user.id
         karma = await get_karma(chat_id, await int_to_alpha(user_id))
         karma = karma["reputation"] if karma else 0
-        await message.reply_text(f"**Total Points**: __{karma}__")
+        await message.reply_text(f"**🥷🏻⚡Total Reputation**: __{karma}__")
 
 
 @app.on_message(filters.command("reputation") & ~filters.private)
